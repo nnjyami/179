@@ -1,31 +1,61 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	export let data;
+
+	import { onMount } from 'svelte';
+	import InfiniteScroll from '../components/InfiniteScroll.svelte';
+
+	let y = 0;
+	let page = 0;
+	let articles = [];
+	let newBatch = [];
+	let container;
+
+	$: articles = [...articles, ...newBatch];
+
+	async function fetchData() {
+		console.log('fetching data', page, data.posts[page]);
+		const slug = data.posts[page].slug;
+		const response = await fetch(`/api/post/${slug}`, {
+			method: 'GET',
+			headers: {
+				'content-type': 'application/json'
+			}
+		});
+		newBatch = await response.json();
+		console.log('newBatch', newBatch);
+	}
+
+	onMount(() => {
+		// load first batch onMount
+		fetchData();
+	});
+
+	const handleScroll = () => {
+		console.log('scroll');
+		if (data.posts.length === page) return;
+		page++;
+		fetchData();
+	};
 </script>
 
+<svelte:window on:scroll={handleScroll} />
+
 <svelte:head>
-	<title>Home</title>
+	<title>179</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<ul class="container">
+		{#each articles as article}
+			<li class="post">
+				<a href={`/posts/${article.slug}`}>
+					<img src={article.photo} alt={article.title} />
+					<div class="post_content">{@html article.content.html}</div>
+				</a>
+			</li>
+		{/each}
+	</ul>
 </section>
 
 <style>
@@ -35,25 +65,31 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
+		min-height: 200svh;
 	}
-
-	h1 {
+	section ul {
+		min-height: 200svh;
 		width: 100%;
 	}
 
-	.welcome {
-		display: block;
+	.post {
+		width: 100%;
+		height: 90svh;
+		padding: 5svh 0;
+		margin: 0 0 10svh;
 		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
-
-	.welcome img {
-		position: absolute;
+	.post img {
 		width: 100%;
 		height: 100%;
-		top: 0;
-		display: block;
+		object-fit: contain;
+	}
+	.post_content {
+		position: absolute;
+		bottom: 5svh;
+		left: 5vw;
+		width: 18vw;
+		font-size: 12px;
+		text-align: justify;
 	}
 </style>
