@@ -2,7 +2,7 @@
 	export let data;
 
 	import { onMount } from 'svelte';
-	import InfiniteScroll from '../components/InfiniteScroll.svelte';
+	import PhotoArticle from '../components/PhotoArticle.svelte';
 
 	let y = 0;
 	let page = 0;
@@ -45,21 +45,22 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<ul class="container">
+<div class="wrap">
+	<div class="container">
 		{#each articles as article}
-			<li class="post">
-				<a href={`/posts/${article.slug}`}>
-					<img src={article.photo} alt={article.title} />
-					<div class="post_content">{@html article.content.html}</div>
-				</a>
-			</li>
+			<PhotoArticle
+				title={article.title}
+				text={article.content.html}
+				img={article.photo}
+				layout={article.layout}
+				isBg={article.isBg}
+			/>
 		{/each}
-	</ul>
-</section>
+	</div>
+</div>
 
 <style>
-	section {
+	.wrap {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -67,29 +68,8 @@
 		flex: 0.6;
 		min-height: 200svh;
 	}
-	section ul {
+	.container {
 		min-height: 200svh;
 		width: 100%;
-	}
-
-	.post {
-		width: 100%;
-		height: 90svh;
-		padding: 5svh 0;
-		margin: 0 0 10svh;
-		position: relative;
-	}
-	.post img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
-	.post_content {
-		position: absolute;
-		bottom: 5svh;
-		left: 5vw;
-		width: 18vw;
-		font-size: 12px;
-		text-align: justify;
 	}
 </style>

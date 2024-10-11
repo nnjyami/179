@@ -10,8 +10,8 @@ export type Post = {
 	lead: Lead[];
 	date: string;
 	categories: Categories[];
-	colorTheme: string;
-	colors: Object[];
+	layout: string;
+	isBg: boolean;
 	photo: string;
 	photoDec: string;
 	published: boolean;
