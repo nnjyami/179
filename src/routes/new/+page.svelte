@@ -64,8 +64,9 @@
 		font-feature-settings: 'vpal';
 		letter-spacing: 0.1em;
 		line-height: 1.9;
-		color: #eaebf1;
-		mix-blend-mode: difference;
+		color: #e6e1e1;
+		mix-blend-mode: luminosity;
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 
 		padding: 0 1.5em;
 	}
