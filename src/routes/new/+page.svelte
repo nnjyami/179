@@ -86,11 +86,10 @@
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(
-			rgba(0, 0, 0, 0) 0%,
-			rgba(0, 0, 0, 0.2) 5%,
-			rgba(0, 0, 0, 0.2) 90%,
-			rgba(0, 0, 0, 0) 100%
+			rgba(0, 0, 0, 0) 5%,
+			rgba(0, 0, 0, 0.25) 15%,
+			rgba(0, 0, 0, 0.25) 75%,
+			rgba(0, 0, 0, 0) 95%
 		);
-		backdrop-filter: blur(4px);
 	}
 </style>
