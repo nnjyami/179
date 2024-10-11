@@ -65,7 +65,7 @@
 		letter-spacing: 0.1em;
 		line-height: 1.9;
 		color: #e6e1e1;
-		mix-blend-mode: luminosity;
+		mix-blend-mode: difference;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
 		padding: 0 1.5em;
@@ -73,6 +73,7 @@
 	section .bg-blur {
 		padding: 0.5em 1.5em;
 		font-size: 28px;
+		mix-blend-mode: normal;
 		position: relative;
 	}
 	section .bg-blur::before {
@@ -81,10 +82,15 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		z-index: -1;
 		width: 100%;
 		height: 100%;
-		background: rgba(0, 0, 0, 0.15);
+		background: linear-gradient(
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.2) 5%,
+			rgba(0, 0, 0, 0.2) 90%,
+			rgba(0, 0, 0, 0) 100%
+		);
 		backdrop-filter: blur(4px);
-		filter: blur(15px);
 	}
 </style>
