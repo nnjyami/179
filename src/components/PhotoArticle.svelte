@@ -55,7 +55,7 @@
 	}
 	.l-flatRightBottom {
 		box-sizing: content-box;
-		padding: 70svh 2.5vw 0 40vw;
+		padding: 70svh 0 0 40vw;
 		width: 60vw;
 	}
 	section .inner {
