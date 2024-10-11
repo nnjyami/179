@@ -38,7 +38,7 @@
 	section {
 		width: 100%;
 		height: 110vh;
-		padding: 50svh 0 2svh;
+		padding: 48svh 0 5svh;
 		overflow-x: auto;
 		writing-mode: vertical-rl;
 	}
