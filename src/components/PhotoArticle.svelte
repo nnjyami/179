@@ -2,7 +2,7 @@
 	export let title = '';
 	export let text;
 	export let img;
-	export let layout = 'l-lower';
+	export let layout = 'l-vLower';
 	export let isBg = false;
 </script>
 
@@ -39,11 +39,14 @@
 	section {
 		width: 100%;
 		height: 100svh;
+	}
+	.l-vLower,
+	.l-vUpper {
 		padding: 48svh 0 2.5svh;
 		overflow-x: auto;
 		writing-mode: vertical-rl;
 	}
-	.l-upper {
+	.l-vUpper {
 		padding: 10svh 0 38svh;
 	}
 	section .inner {

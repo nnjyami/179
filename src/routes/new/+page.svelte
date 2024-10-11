@@ -16,7 +16,7 @@
 	</div>
 </article>
 <article>
-	<section class="l-lower">
+	<section class="l-vLower">
 		<div class="inner ja-serif">
 			<p>
 				初めての競馬。パドックでぐるぐる歩く馬を見て、気に入った馬の馬券を買う。<br />
