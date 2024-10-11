@@ -55,7 +55,7 @@
 	}
 	.l-flatRightBottom {
 		box-sizing: content-box;
-		padding: 70svh 0 0 40vw;
+		padding: 75svh 0 0 40vw;
 		width: 60vw;
 	}
 	section .inner {
@@ -67,7 +67,7 @@
 		mix-blend-mode: difference;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
-		padding: 0 6em 0 2em;
+		padding: 0 7.5em 0 2em;
 	}
 	section .inner a {
 		text-decoration: underline;
