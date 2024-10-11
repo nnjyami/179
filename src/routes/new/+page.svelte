@@ -72,7 +72,6 @@
 	}
 	section .bg-blur {
 		padding: 0.5em 1.5em;
-		font-size: 28px;
 		mix-blend-mode: normal;
 		position: relative;
 	}
@@ -91,5 +90,6 @@
 			rgba(0, 0, 0, 0.25) 75%,
 			rgba(0, 0, 0, 0) 95%
 		);
+		backdrop-filter: blur(1px);
 	}
 </style>
