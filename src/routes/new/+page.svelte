@@ -1,5 +1,5 @@
 <article>
-	<section>
+	<section class="l-upper">
 		<div class="inner ja-serif">
 			<p>
 				N家と宝ヶ池公園を散歩。<br />
@@ -13,6 +13,20 @@
 	</section>
 	<div class="article_img">
 		<img src="/photo/L1016433.jpg" alt="" />
+	</div>
+</article>
+<article>
+	<section class="l-lower">
+		<div class="inner ja-serif">
+			<p>
+				初めての競馬。パドックでぐるぐる歩く馬を見て、気に入った馬の馬券を買う。<br />
+				パドックを見て、馬券を買う施設内に行き、外でレースを見る一連のルーティーンは忙しい。<br />
+				見込んだリッチブラックは一番人気の怒涛の追い上げに2位だった。
+			</p>
+		</div>
+	</section>
+	<div class="article_img">
+		<img src="/photo/L1016342.jpg" alt="" />
 	</div>
 </article>
 
@@ -41,6 +55,9 @@
 		padding: 48svh 0 2.5svh;
 		overflow-x: auto;
 		writing-mode: vertical-rl;
+	}
+	.l-upper {
+		padding: 2.5svh 0 48svh;
 	}
 	section .inner {
 		font-size: 25px;
