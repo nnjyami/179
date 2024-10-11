@@ -38,18 +38,18 @@
 	section {
 		width: 100%;
 		height: 100svh;
-		padding: 50svh 0 10svh;
+		padding: 40svh 0 5svh;
 		overflow-x: auto;
 	}
 	section .inner {
-		font-size: 34px;
+		font-size: 30px;
 		font-feature-settings: 'vpal';
-		letter-spacing: 0.15em;
-		line-height: 2.1;
+		letter-spacing: 0.1em;
+		line-height: 1.9;
 		color: #eaebf1;
 		mix-blend-mode: difference;
 		writing-mode: vertical-rl;
 
-		padding: 0 2em;
+		padding: 0 1.5em;
 	}
 </style>
