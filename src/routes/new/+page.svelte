@@ -12,7 +12,7 @@
 		</div>
 	</section>
 	<div class="article_img">
-		<img src="/photo/L1001447.jpg" alt="" />
+		<img src="/photo/L1016433.jpg" alt="" />
 	</div>
 </article>
 
