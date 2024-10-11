@@ -49,6 +49,10 @@
 	.l-vUpper {
 		padding: 10svh 0 38svh;
 	}
+	.l-flat {
+		padding: 10svh 0 0;
+		width: 60vw;
+	}
 	section .inner {
 		font-size: 25px;
 		font-feature-settings: 'vpal';
@@ -59,6 +63,11 @@
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
 		padding: 0 6em 0 2em;
+	}
+	.l-flat .inner {
+		font-size: 12px;
+		font-feature-settings: 'palt';
+		padding: 0 2em;
 	}
 	section .bg-blur {
 		padding: 0.5em 6em 1.5em 2em;
