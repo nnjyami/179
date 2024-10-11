@@ -7,11 +7,8 @@
 <style>
 	.logo {
 		color: var(--text-1);
-		font-size: clamp(3rem, calc(2.5rem + 1vw), 4rem);
-		height: 200px;
-		position: absolute;
-		top: 2em;
-		right: -0.65em;
+		font-size: 14px;
+		mix-blend-mode: difference;
 		font-variation-settings:
 			'wdth' 179,
 			'wght' 179;
@@ -22,11 +19,7 @@
 	.logo_1 {
 	}
 	.logo_2 {
-		font-size: 90%;
-		translate: -0.3em -0.15em;
 	}
 	.logo_3 {
-		font-size: 89%;
-		translate: -0.6em 0.07em;
 	}
 </style>
