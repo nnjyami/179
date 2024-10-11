@@ -18,6 +18,8 @@
 		z-index: 1000;
 		height: 200px;
 		width: 100%;
+		box-sizing: border-box;
+		padding: 8px 12px;
 	}
 
 	.corner {
