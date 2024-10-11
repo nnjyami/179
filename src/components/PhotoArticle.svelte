@@ -67,6 +67,7 @@
 	.l-flat .inner {
 		font-size: 12px;
 		font-feature-settings: 'palt';
+		text-align: justify;
 		padding: 0 2em;
 	}
 	section .bg-blur {
@@ -85,8 +86,8 @@
 		height: 100%;
 		background: linear-gradient(
 			rgba(0, 0, 0, 0) 5%,
-			rgba(0, 0, 0, 0.25) 15%,
-			rgba(0, 0, 0, 0.25) 75%,
+			rgba(0, 0, 0, 0.35) 15%,
+			rgba(0, 0, 0, 0.35) 75%,
 			rgba(0, 0, 0, 0) 95%
 		);
 		backdrop-filter: blur(1.5px);
