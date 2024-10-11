@@ -64,6 +64,9 @@
 
 		padding: 0 6em 0 2em;
 	}
+	section .inner a {
+		text-decoration: underline;
+	}
 	.l-flat .inner {
 		font-size: 12px;
 		font-feature-settings: 'palt';
