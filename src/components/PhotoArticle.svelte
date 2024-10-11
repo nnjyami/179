@@ -67,7 +67,7 @@
 		mix-blend-mode: difference;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
-		padding: 0 9em 0 2em;
+		padding: 0 8.5em 0 2em;
 	}
 	section .inner a {
 		text-decoration: underline;
