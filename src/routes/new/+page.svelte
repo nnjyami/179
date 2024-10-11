@@ -66,13 +66,25 @@
 		line-height: 1.9;
 		color: #e6e1e1;
 		mix-blend-mode: luminosity;
-		text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
 		padding: 0 1.5em;
 	}
 	section .bg-blur {
-		background: rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(2px);
 		padding: 0.5em 1.5em;
+		font-size: 28px;
+		position: relative;
+	}
+	section .bg-blur::before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.15);
+		backdrop-filter: blur(4px);
+		filter: blur(15px);
 	}
 </style>
