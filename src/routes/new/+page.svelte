@@ -40,6 +40,7 @@
 		height: 110vh;
 		padding: 50svh 0 2svh;
 		overflow-x: auto;
+		writing-mode: vertical-rl;
 	}
 	section .inner {
 		font-size: 25px;
@@ -48,7 +49,6 @@
 		line-height: 1.9;
 		color: #eaebf1;
 		mix-blend-mode: difference;
-		writing-mode: vertical-rl;
 
 		padding: 0 1.5em;
 	}
