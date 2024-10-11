@@ -19,7 +19,7 @@
 <style>
 	article {
 		width: 100vw;
-		height: 100vh;
+		height: 110vh;
 		position: relative;
 	}
 	.article_img {
@@ -37,8 +37,8 @@
 	}
 	section {
 		width: 100%;
-		height: 110vh;
-		padding: 48svh 0 5svh;
+		height: 100svh;
+		padding: 48svh 0 2.5svh;
 		overflow-x: auto;
 		writing-mode: vertical-rl;
 	}
