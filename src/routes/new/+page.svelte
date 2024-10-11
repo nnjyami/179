@@ -1,6 +1,6 @@
 <article>
 	<section class="l-upper">
-		<div class="inner ja-serif">
+		<div class="inner ja-serif bg-blur">
 			<p>
 				N家と宝ヶ池公園を散歩。<br />
 				途中大きなカマキリを捕まえたら、子どもたちはすっかり夢中になり、動かなくなってしまった。<br
@@ -57,7 +57,7 @@
 		writing-mode: vertical-rl;
 	}
 	.l-upper {
-		padding: 2.5svh 0 48svh;
+		padding: 6svh 0 42svh;
 	}
 	section .inner {
 		font-size: 25px;
@@ -69,5 +69,10 @@
 		text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 
 		padding: 0 1.5em;
+	}
+	section .bg-blur {
+		background: rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(2px);
+		padding: 0.5em 1.5em;
 	}
 </style>
