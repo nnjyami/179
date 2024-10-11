@@ -9,7 +9,7 @@
 <article>
 	<section class={layout}>
 		<div class="inner ja-serif {isBg ? 'bg-blur' : ''}">
-			<p>{@html text}</p>
+			{@html text}
 		</div>
 	</section>
 	<div class="article_img">
@@ -53,6 +53,11 @@
 		padding: 10svh 0 0;
 		width: 60vw;
 	}
+	.l-flatRightBottom {
+		box-sizing: content-box;
+		padding: 70svh 2.5vw 0 40vw;
+		width: 60vw;
+	}
 	section .inner {
 		font-size: 25px;
 		font-feature-settings: 'vpal';
@@ -67,7 +72,8 @@
 	section .inner a {
 		text-decoration: underline;
 	}
-	.l-flat .inner {
+	.l-flat .inner,
+	.l-flatRightBottom .inner {
 		font-size: 12px;
 		font-feature-settings: 'palt';
 		text-align: justify;
