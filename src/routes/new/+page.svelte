@@ -57,7 +57,7 @@
 		writing-mode: vertical-rl;
 	}
 	.l-upper {
-		padding: 6svh 0 42svh;
+		padding: 8.5svh 0 40svh;
 	}
 	section .inner {
 		font-size: 25px;
@@ -68,10 +68,10 @@
 		mix-blend-mode: difference;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
-		padding: 0 1.5em;
+		padding: 0 6em 0 2em;
 	}
 	section .bg-blur {
-		padding: 0.5em 1.5em;
+		padding: 0.5em 6em 1.5em 2em;
 		mix-blend-mode: normal;
 		position: relative;
 	}
@@ -90,6 +90,6 @@
 			rgba(0, 0, 0, 0.25) 75%,
 			rgba(0, 0, 0, 0) 95%
 		);
-		backdrop-filter: blur(1px);
+		backdrop-filter: blur(1.5px);
 	}
 </style>
