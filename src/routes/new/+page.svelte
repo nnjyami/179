@@ -37,12 +37,12 @@
 	}
 	section {
 		width: 100%;
-		height: 100svh;
-		padding: 40svh 0 5svh;
+		height: 110vh;
+		padding: 50svh 0 2svh;
 		overflow-x: auto;
 	}
 	section .inner {
-		font-size: 30px;
+		font-size: 25px;
 		font-feature-settings: 'vpal';
 		letter-spacing: 0.1em;
 		line-height: 1.9;
