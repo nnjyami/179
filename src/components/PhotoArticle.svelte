@@ -48,13 +48,17 @@
 		height: 100svh;
 	}
 	.l-vLower section,
-	.l-vUpper section {
+	.l-vUpper section,
+	.l-vStrong section {
 		padding: 48svh 0 2.5svh;
 		overflow-x: auto;
 		writing-mode: vertical-rl;
 	}
 	.l-vUpper section {
 		padding: 10svh 0 38svh;
+	}
+	.l-vStrong section {
+		padding: 55svh 0 2svh;
 	}
 	.l-flat section {
 		padding: 10svh 0 0 calc(var(--redGrid) * (1) + var(--whiteGrid) * (1));
@@ -85,6 +89,10 @@
 		font-feature-settings: 'palt';
 		text-align: justify;
 		padding: 0;
+	}
+	.l-vStrong .inner {
+		font-size: 45px;
+		padding: 0 var(--rightEdgeWhiteGrid) 0 2em;
 	}
 	section .bg-blur {
 		padding: 0.5em calc(var(--redGrid) * (9) + var(--whiteGrid) * (9 - 1)) 1.5em 2em;
