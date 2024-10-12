@@ -19,7 +19,8 @@
 		height: 200px;
 		width: 100%;
 		box-sizing: border-box;
-		padding: calc(var(--rowGrid) * 0.5) 12px;
+		padding: calc(var(--rowGrid) * 0.5) var(--rightEdgeWhiteGrid) calc(var(--rowGrid) * 0.5)
+			var(--leftEdgeWhiteGrid);
 	}
 
 	.corner {

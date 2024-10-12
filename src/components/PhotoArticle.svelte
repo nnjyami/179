@@ -25,7 +25,8 @@
 		position: relative;
 	}
 	.l-vLower,
-	.l-vUpper {
+	.l-vUpper,
+	.l-vStrong {
 		width: 100%;
 		margin: 0 auto;
 	}
