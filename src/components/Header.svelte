@@ -12,16 +12,15 @@
 <style>
 	header {
 		overflow: hidden;
-		position: fixed;
+		position: sticky;
 		top: 0;
 		left: 0;
 		z-index: 1000;
-		height: 200px;
 		width: 100%;
 		box-sizing: border-box;
 		padding: calc(var(--rowGrid) * 0.5) var(--rightEdgeWhiteGrid) calc(var(--rowGrid) * 0.5)
 			var(--leftEdgeWhiteGrid);
-		color: #333;
+		color: #111;
 		mix-blend-mode: difference;
 	}
 

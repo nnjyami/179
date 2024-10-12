@@ -68,7 +68,6 @@
 		align-items: center;
 		flex: 0.6;
 		min-height: 200svh;
-		padding-top: calc(var(--rowGrid) * 1.5);
 	}
 	.container {
 		min-height: 200svh;
