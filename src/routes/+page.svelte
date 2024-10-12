@@ -2,6 +2,7 @@
 	export let data;
 
 	import { onMount } from 'svelte';
+	import Grid from '../components/Grid.svelte';
 	import PhotoArticle from '../components/PhotoArticle.svelte';
 
 	let y = 0;
@@ -67,6 +68,7 @@
 		align-items: center;
 		flex: 0.6;
 		min-height: 200svh;
+		padding-top: calc(var(--rowGrid) * 1.5);
 	}
 	.container {
 		min-height: 200svh;

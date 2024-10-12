@@ -7,3 +7,67 @@
 	--color-bg-gray: #f8f8f8;
 	--color-bg-dark: #333;
 }
+
+/*
+* color
+-------------------------------------- */
+:root {
+	--bg-base: #f8f6f2;
+}
+
+/*
+* grid
+-------------------------------------- */
+:root {
+	--scrollbar: 0px;
+	--breakpoint: 900px;
+	--100vw: calc(100vw - var(--scrollbar));
+	--1vw: calc((100vw - var(--scrollbar)) / 100);
+
+	--leftEdgeWhiteGrid: 32px;
+	--rightEdgeWhiteGrid: 32px;
+	--gridColumn: 24;
+	--rowGrid: 32px;
+	--whiteGrid: 8px;
+	--redGrid: calc(
+		(
+				var(--100vw) - var(--leftEdgeWhiteGrid) - var(--rightEdgeWhiteGrid) - var(--whiteGrid) *
+					(var(--gridColumn) - 1)
+			) / var(--gridColumn)
+	);
+}
+@media all and (max-width: 900px) {
+	:root {
+		--leftEdgeWhiteGrid: 16px;
+		--rightEdgeWhiteGrid: 16px;
+		--gridColumn: 16;
+		--rowGrid: 16px;
+		--whiteGrid: 8px;
+		--redGrid: calc(
+			(
+					var(--100vw) - var(--leftEdgeWhiteGrid) - var(--rightEdgeWhiteGrid) - var(--whiteGrid) *
+						(var(--gridColumn) - 1)
+				) / var(--gridColumn)
+		);
+	}
+}
+
+/*
+* typography
+-------------------------------------- */
+:root {
+	--text-size: 14px;
+	--text-size-lead: 18px;
+	--text-size-prime: 22px;
+	--text-size-note: 12px;
+	--text-size-sub: 9px;
+}
+@media all and (max-width: 900px) {
+	:root {
+		--text-size: 12px;
+		--text-size-lead: 16px;
+		--text-size-prime: 18px;
+		--text-size-note: 9px;
+		--text-size-sub: 7px;
+	}
+}

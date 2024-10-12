@@ -19,7 +19,7 @@
 		height: 200px;
 		width: 100%;
 		box-sizing: border-box;
-		padding: 8px 12px;
+		padding: calc(var(--rowGrid) * 0.5) 12px;
 	}
 
 	.corner {

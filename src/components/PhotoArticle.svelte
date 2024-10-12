@@ -6,8 +6,8 @@
 	export let isBg = false;
 </script>
 
-<article>
-	<section class={layout}>
+<article class={layout}>
+	<section>
 		<div class="inner ja-serif {isBg ? 'bg-blur' : ''}">
 			{@html text}
 		</div>
@@ -19,10 +19,17 @@
 
 <style>
 	article {
-		width: 100vw;
-		height: 110vh;
+		width: calc(100% - var(--leftEdgeWhiteGrid) - var(--rightEdgeWhiteGrid));
+		height: 105vh;
+		margin: var(--rowGrid) auto;
 		position: relative;
 	}
+	.l-vLower,
+	.l-vUpper {
+		width: calc(100% - var(--rightEdgeWhiteGrid));
+		margin: var(--rowGrid) auto var(--rowGrid) 0;
+	}
+
 	.article_img {
 		width: 100%;
 		height: 100%;
@@ -40,23 +47,23 @@
 		width: 100%;
 		height: 100svh;
 	}
-	.l-vLower,
-	.l-vUpper {
+	.l-vLower section,
+	.l-vUpper section {
 		padding: 48svh 0 2.5svh;
 		overflow-x: auto;
 		writing-mode: vertical-rl;
 	}
-	.l-vUpper {
+	.l-vUpper section {
 		padding: 10svh 0 38svh;
 	}
-	.l-flat {
-		padding: 10svh 0 0;
-		width: 60vw;
+	.l-flat section {
+		padding: 10svh 0 0 calc(var(--redGrid) * (1) + var(--whiteGrid) * (1));
+		width: calc(var(--redGrid) * (8) + var(--whiteGrid) * (8 - 1));
 	}
-	.l-flatRightBottom {
+	.l-flatRightBottom section {
 		box-sizing: content-box;
-		padding: 75svh 0 0 40vw;
-		width: 60vw;
+		padding: 75svh 0 0 calc(var(--redGrid) * (7) + var(--whiteGrid) * (7));
+		width: calc(var(--redGrid) * (8) + var(--whiteGrid) * (8 - 1));
 	}
 	section .inner {
 		font-size: 25px;
@@ -67,7 +74,7 @@
 		mix-blend-mode: difference;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 
-		padding: 0 8.5em 0 2em;
+		padding: 0 calc(var(--redGrid) * (9) + var(--whiteGrid) * (9 - 1)) 0 2em;
 	}
 	section .inner a {
 		text-decoration: underline;
@@ -77,10 +84,10 @@
 		font-size: 12px;
 		font-feature-settings: 'palt';
 		text-align: justify;
-		padding: 0 2em;
+		padding: 0;
 	}
 	section .bg-blur {
-		padding: 0.5em 6em 1.5em 2em;
+		padding: 0.5em calc(var(--redGrid) * (9) + var(--whiteGrid) * (9 - 1)) 1.5em 2em;
 		mix-blend-mode: normal;
 		position: relative;
 	}
