@@ -398,8 +398,8 @@ th {
   --breakpoint: 900px;
   --100vw: calc(100vw - var(--scrollbar));
   --1vw: calc((100vw - var(--scrollbar)) / 100);
-  --leftEdgeWhiteGrid: 32px;
-  --rightEdgeWhiteGrid: 32px;
+  --leftEdgeWhiteGrid: 16px;
+  --rightEdgeWhiteGrid: 16px;
   --gridColumn: 24;
   --rowGrid: 32px;
   --whiteGrid: 8px;
@@ -413,8 +413,8 @@ th {
 
 @media all and (max-width: 900px) {
   :root {
-    --leftEdgeWhiteGrid: 16px;
-    --rightEdgeWhiteGrid: 16px;
+    --leftEdgeWhiteGrid: 8px;
+    --rightEdgeWhiteGrid: 8px;
     --gridColumn: 16;
     --rowGrid: 16px;
     --whiteGrid: 8px;

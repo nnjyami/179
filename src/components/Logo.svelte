@@ -6,7 +6,7 @@
 
 <style>
 	.logo {
-		color: #fff;
+		color: #292929;
 		font-size: 14px;
 		mix-blend-mode: difference;
 		font-variation-settings:

@@ -26,8 +26,8 @@
 	}
 	.l-vLower,
 	.l-vUpper {
-		width: calc(100% - var(--rightEdgeWhiteGrid));
-		margin: var(--rowGrid) auto var(--rowGrid) 0;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.article_img {
