@@ -20,7 +20,7 @@
 		box-sizing: border-box;
 		padding: calc(var(--rowGrid) * 0.5) var(--rightEdgeWhiteGrid) calc(var(--rowGrid) * 0.5)
 			var(--leftEdgeWhiteGrid);
-		color: #111;
+		color: #fff;
 		mix-blend-mode: difference;
 	}
 
