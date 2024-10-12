@@ -6,9 +6,7 @@
 
 <style>
 	.logo {
-		color: #292929;
 		font-size: 14px;
-		mix-blend-mode: difference;
 		font-variation-settings:
 			'wdth' 179,
 			'wght' 179;

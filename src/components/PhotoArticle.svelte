@@ -21,7 +21,7 @@
 	article {
 		width: calc(100% - var(--leftEdgeWhiteGrid) - var(--rightEdgeWhiteGrid));
 		height: 105vh;
-		margin: var(--rowGrid) auto;
+		margin: calc(var(--rowGrid) * 0.5) auto;
 		position: relative;
 	}
 	.l-vLower,
