@@ -58,7 +58,8 @@
 		padding: 10svh 0 38svh;
 	}
 	.l-vStrong section {
-		padding: 55svh 0 2svh;
+		padding: 55svh 0 1svh;
+		height: 100vh;
 	}
 	.l-flat section {
 		padding: 10svh 0 0 calc(var(--redGrid) * (1) + var(--whiteGrid) * (1));
