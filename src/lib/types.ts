@@ -2,6 +2,7 @@ export type Categories = 'sveltekit' | 'svelte';
 export type Lead = 'sveltekit' | 'svelte';
 
 export type Post = {
+	num: number;
 	title: string;
 	titleEnglish: string;
 	author: string;
